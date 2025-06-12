@@ -1,2 +1,1 @@
-# Jenny-Marinay
-more decent web portfolio (keeping up with the job market) using React + TailwindCSS + Framer Motion
+Welcome! This is where I keep my web dev adventures — from projects I’ve built (on purpose) to things I accidentally learned along the way. You’ll find a mix of code, creativity, and probably a few late-night decisions powered by too much coffee.
