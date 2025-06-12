@@ -17,8 +17,8 @@ const projectsData = [
     },
     {
         id: 2,
-        image: "/public/assets/Projects/vuePortfolio.png",
-        title: TerminalPortfolio,
+        title: "Terminal Portfolio",
+        image: TerminalPortfolio,
         date: "Mar 2025",
         description: "A terminal-inspired web portfolio where I practiced my knowledge in Vue.",
         url: "https://yin-web-portfolio.vercel.app/terminal",
