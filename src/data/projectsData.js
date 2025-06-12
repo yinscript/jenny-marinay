@@ -1,5 +1,5 @@
 // Images
-import TodoList from '/public/assets/Projects/todolist.png';
+import TodoList from '/public/assets/Projects/todoList.png';
 import TerminalPortfolio from '/public/assets/Projects/vuePortfolio.png';
 import Soarchives from '/public/assets/Projects/soarchives.png';
 import Snacz from '/public/assets/Projects/snacz.png';
