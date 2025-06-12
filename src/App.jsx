@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import { homeSections, routeSections } from "./data/sectionsData";
-import Navbar from "./components/sections/navbar";
+import Navbar from "./components/sections/Navbar";
 import Hero from "./components/sections/hero";
 import Journey from "./components/sections/Journey";
 import Projects from "./components/sections/Projects";
