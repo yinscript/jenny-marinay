@@ -1,4 +1,6 @@
 import RotatingText from '/src/components/Reactbits/RotatingText'; 
+import CityLights from '/public/assets/Hero/cityLights.jpg';
+
 
 const lines = [
   "role: ui/ux designer, frontend developer, software developer",
@@ -30,7 +32,7 @@ const Hero = () => {
           {/* Cover Photo */}
           <div className="relative bg-black/30">
             <img
-              src="public/assets/Hero/cityLights.jpg"
+              src={ CityLights }
               alt="Cover"
               className="w-full h-10 sm:h-20 md:h-20 lg:h-20 object-cover"
             />
