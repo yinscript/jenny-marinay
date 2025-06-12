@@ -4,6 +4,8 @@ import { infoItems } from '/src/data/aboutData';
 import Carousel from '/src/components/Reactbits/Carousel'
 import MotionWrapper from "/src/components/MotionWrapper";
 import { slideInUp } from "/src/utils/motionVariants";
+import NotMyPic from "/public/assets/About/notme.png";
+import GithubLogo from "/public/assets/About/github.png";
 
 export default function About() {
   const icons = Object.entries(techIcons);
@@ -126,7 +128,7 @@ export default function About() {
           <div className="sm:col-span-6 col-span-1 grid grid-cols-2 gap-4">
             <div className="bg-zinc-800 border border-white/20 backdrop-blur-md rounded-lg p-0 shadow flex flex-col overflow-hidden h-48">
               <img
-                src="/public/assets/About/notme.png"
+                src= { NotMyPic }
                 alt="Sidebar 1"
                 className="w-full h-full object-cover"
               />
@@ -134,7 +136,7 @@ export default function About() {
 
             <div className="bg-zinc-800 border border-white/20 backdrop-blur-md rounded-lg p-0 shadow flex flex-col overflow-hidden h-48">
               <img
-                src="/public/assets/About/github.webp"
+                src= { GithubLogo }
                 alt="Sidebar 2"
                 className="w-full h-full object-cover"
               />

@@ -1,8 +1,15 @@
+// Images
+import TodoList from '/public/assets/Projects/todolist.png';
+import TerminalPortfolio from '/public/assets/Projects/vuePortfolio.png';
+import Soarchives from '/public/assets/Projects/soarchives.png';
+import Snacz from '/public/assets/Projects/snacz.png';
+
+
 const projectsData = [
     {
         id: 1,
         title: "TodoList",
-        image: "/public/assets/Projects/todolist.png",
+        image: TodoList,
         date: "Apr 2025",
         description: "First attempt in using React. Learned the use of JSON local storage and applied it.",
         url: "https://minimal-todolist.vercel.app",
@@ -11,7 +18,7 @@ const projectsData = [
     {
         id: 2,
         image: "/public/assets/Projects/vuePortfolio.png",
-        title: "Terminal Portfolio",
+        title: TerminalPortfolio,
         date: "Mar 2025",
         description: "A terminal-inspired web portfolio where I practiced my knowledge in Vue.",
         url: "https://yin-web-portfolio.vercel.app/terminal",
@@ -20,7 +27,7 @@ const projectsData = [
     {
         id: 3,
         title: "Soarchives",
-        image: "/public/assets/Projects/soarchives.png",
+        image: Soarchives,
         date: "Feb 2025 - Dec 2025",
         description: "A social commerce centralized platform for showcasing and selling artisanal crafts.",
         url: "https://www.behance.net/gallery/215552791/SOARchives-Frontend-User-Interface-Design",
@@ -29,7 +36,7 @@ const projectsData = [
     {
         id: 4,
         title: "Snacz",
-        image: "/public/assets/Projects/snacz.png",
+        image: Snacz,
         date: "Jan 2025",
         description: "A UI/UX case study for a movie theater app, focusing on improving user experience and accessibility.",
         url: "https://www.behance.net/gallery/174934231/Snacz-Snack-Ordering-App-for-a-Movie-Theater",

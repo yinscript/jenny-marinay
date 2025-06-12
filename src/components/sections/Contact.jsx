@@ -2,6 +2,8 @@ import { useState } from 'react';
 import mailData from '/src/data/mailData';
 import { socialLinks } from '/src/data/socialLinks';
 import { iconMap } from '/src/data/socialLinks';
+import Monterey from '/public/assets/Contact/monterey.jpg';
+import PlainMail from "/public/assets/Airmails/plainMail.png";
 
 const Contact = () => {
   const [activeTab, setActiveTab] = useState('social');
@@ -37,7 +39,7 @@ const Contact = () => {
         <div
           className="pt-4 px-4 bg-no-repeat bg-center bg-cover border border-zinc-700 max-w-full md:max-w-4xl mx-auto"
           style={{
-            backgroundImage: 'url(./public/assets/Contact/monterey.jpg)',
+            backgroundImage: `url(${Monterey})`,
           }}
         >
           {/* Top Bar with Dots + Tabs */}
@@ -94,7 +96,7 @@ const Contact = () => {
                     zIndex: isHovered ? 50 : index,
                     top: `${index * 30}px`,
                     transform: `rotate(${(index - 1) * 3}deg)`,
-                    backgroundImage: `url('/public/assets/Airmails/plainMail.png')`,
+                    backgroundImage: `url(${PlainMail})`,
                   }}
                   onClick={() => openMail(mail)}
                   onMouseEnter={() => setHoveredMailId(mail.id)}
