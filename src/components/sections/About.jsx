@@ -126,7 +126,7 @@ export default function About() {
           <div className="sm:col-span-6 col-span-1 grid grid-cols-2 gap-4">
             <div className="bg-zinc-800 border border-white/20 backdrop-blur-md rounded-lg p-0 shadow flex flex-col overflow-hidden h-48">
               <img
-                src="/src/assets/About/notme.png"
+                src="/public/assets/About/notme.png"
                 alt="Sidebar 1"
                 className="w-full h-full object-cover"
               />
@@ -134,7 +134,7 @@ export default function About() {
 
             <div className="bg-zinc-800 border border-white/20 backdrop-blur-md rounded-lg p-0 shadow flex flex-col overflow-hidden h-48">
               <img
-                src="/src/assets/About/github.webp"
+                src="/public/assets/About/github.webp"
                 alt="Sidebar 2"
                 className="w-full h-full object-cover"
               />

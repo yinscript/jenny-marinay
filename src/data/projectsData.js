@@ -2,7 +2,7 @@ const projectsData = [
     {
         id: 1,
         title: "TodoList",
-        image: "/src/assets/Projects/todolist.png",
+        image: "/public/assets/Projects/todolist.png",
         date: "Apr 2025",
         description: "First attempt in using React. Learned the use of JSON local storage and applied it.",
         url: "https://minimal-todolist.vercel.app",
@@ -10,7 +10,7 @@ const projectsData = [
     },
     {
         id: 2,
-        image: "/src/assets/Projects/vuePortfolio.png",
+        image: "/public/assets/Projects/vuePortfolio.png",
         title: "Terminal Portfolio",
         date: "Mar 2025",
         description: "A terminal-inspired web portfolio where I practiced my knowledge in Vue.",
@@ -20,7 +20,7 @@ const projectsData = [
     {
         id: 3,
         title: "Soarchives",
-        image: "/src/assets/Projects/soarchives.png",
+        image: "/public/assets/Projects/soarchives.png",
         date: "Feb 2025 - Dec 2025",
         description: "A social commerce centralized platform for showcasing and selling artisanal crafts.",
         url: "https://www.behance.net/gallery/215552791/SOARchives-Frontend-User-Interface-Design",
@@ -29,7 +29,7 @@ const projectsData = [
     {
         id: 4,
         title: "Snacz",
-        image: "/src/assets/Projects/snacz.png",
+        image: "/public/assets/Projects/snacz.png",
         date: "Jan 2025",
         description: "A UI/UX case study for a movie theater app, focusing on improving user experience and accessibility.",
         url: "https://www.behance.net/gallery/174934231/Snacz-Snack-Ordering-App-for-a-Movie-Theater",

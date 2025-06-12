@@ -94,7 +94,7 @@ const Contact = () => {
                     zIndex: isHovered ? 50 : index,
                     top: `${index * 30}px`,
                     transform: `rotate(${(index - 1) * 3}deg)`,
-                    backgroundImage: `url('/src/assets/Airmails/plainMail.png')`,
+                    backgroundImage: `url('/public/assets/Airmails/plainMail.png')`,
                   }}
                   onClick={() => openMail(mail)}
                   onMouseEnter={() => setHoveredMailId(mail.id)}

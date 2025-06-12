@@ -30,7 +30,7 @@ const Hero = () => {
           {/* Cover Photo */}
           <div className="relative bg-black/30">
             <img
-              src="src/assets/Hero/cityLights.jpg"
+              src="public/assets/Hero/cityLights.jpg"
               alt="Cover"
               className="w-full h-10 sm:h-20 md:h-20 lg:h-20 object-cover"
             />
