@@ -37,7 +37,7 @@ const Contact = () => {
         <div
           className="pt-4 px-4 bg-no-repeat bg-center bg-cover border border-zinc-700 max-w-full md:max-w-4xl mx-auto"
           style={{
-            backgroundImage: 'url(/src/assets/Contact/monterey.jpg)',
+            backgroundImage: 'url(./public/assets/Contact/monterey.jpg)',
           }}
         >
           {/* Top Bar with Dots + Tabs */}
