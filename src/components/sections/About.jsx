@@ -54,7 +54,7 @@ export default function About() {
                   <div className="text-lg text-zinc-900 text-center flex-1 relative">
                     <Carousel
                       autoplay={true}
-                      autoplayDelay={3000}
+                      autoplayDelay={10000}
                       pauseOnHover={true}
                       loop={true}
                       round={false}
@@ -104,7 +104,7 @@ export default function About() {
         variants={slideInUp}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ delay: 10, duration: 3 }}
         className="relative"
       >
@@ -116,7 +116,7 @@ export default function About() {
                   const Icon = item.icon;
                   return (
                     <div key={index} className="flex items-center px-2 py-1 rounded border border-zinc-600 text-zinc-400">
-                      <div className="text-lg pr-2 text-green-400"><Icon /></div>
+                      <div className="text-lg pr-2 text-blue-400"><Icon /></div>
                       <div className="text-sm">{item.label}</div>
                     </div>
                   );
@@ -154,7 +154,7 @@ export default function About() {
         variants={slideInUp}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ delay: 10, duration: 3 }}
         className="relative"
       >
