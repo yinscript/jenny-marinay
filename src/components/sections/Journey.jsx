@@ -46,7 +46,7 @@ const Journey = ({ limit }) => {
                         variants={slideInRight}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: false, amount: 0.5 }}
+                        viewport={{ once: true, amount: 0.5 }}
                         transition={{ delay: idx * 0.15, duration: 0.6 }}
                         className="ml-5"
                       >
