@@ -13,7 +13,7 @@ const Journey = ({ limit }) => {
           {data.map((entry, index) => (
             <div key={index} className="flex items-start gap-6">
               {/* Year */}
-              <div className="w-15 text-left text-2xl sm:text-2xl md:text-2xl lg:text-3xl font-thin text-zinc-300">
+              <div className="w-auto text-left text-2xl sm:text-2xl md:text-2xl lg:text-3xl font-thin text-zinc-300">
                 {entry.year}
               </div>
 
