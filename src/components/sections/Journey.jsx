@@ -58,7 +58,7 @@ const Journey = ({ limit }) => {
                         )}
 
                         {/* Title */}
-                        <div className="text-md md:text-md lg:text-xl text-zinc-50">
+                        <div className="text-md md:text-md lg:text-xl text-zinc-300">
                           {event.title}
                         </div>
 
