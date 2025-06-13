@@ -24,6 +24,7 @@ export const homeSections = [
     },
     {
         id: "contact",
+        title: "Let's Connect",
         component: "Contact",
     },
 ];

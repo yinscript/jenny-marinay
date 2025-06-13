@@ -15,8 +15,7 @@ const Contact = () => {
 
   return (
     <div className="max-w-4xl px-4 py-8 mx-auto">
-      <h2 className="text-3xl text-zinc-300 font mb-5">Let's connect</h2>
-
+   
       {/* Tabs */}
       <div className="flex space-x-4 mb-6 border-b border-zinc-700">
         {['social', 'mail'].map((tab) => (
