@@ -13,7 +13,7 @@ const Journey = ({ limit }) => {
           {data.map((entry, index) => (
             <div key={index} className="flex items-start gap-6">
               {/* Year */}
-              <div className="w-auto text-left text-2xl sm:text-2xl md:text-2xl lg:text-3xl font-thin text-zinc-300">
+              <div className="w-auto text-left text-2xl sm:text-2xl md:text-2xl lg:text-3xl font-light text-zinc-300">
                 {entry.year}
               </div>
 
@@ -52,19 +52,19 @@ const Journey = ({ limit }) => {
                       >
                         {/* Month */}
                         {event.month && (
-                          <div className="text-sm text-zinc-400 mb-1">
+                          <div className="text-xs md:text-sm lg:text-sm text-zinc-400 mb-1">
                               {event.month}
                           </div>
                         )}
 
                         {/* Title */}
-                        <div className="text-xl text-zinc-50">
+                        <div className="text-md md:text-md lg:text-xl text-zinc-50">
                           {event.title}
                         </div>
 
                         {/* Description */}
                         <div
-                          className="text-md text-zinc-400"
+                          className="text-sm md:text-md lg:text-lg text-zinc-400"
                           dangerouslySetInnerHTML={{ __html: event.description }}
                         />
                       </MotionWrapper>
