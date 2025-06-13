@@ -64,7 +64,7 @@ const Journey = ({ limit }) => {
 
                         {/* Description */}
                         <div
-                          className="text-sm md:text-md lg:text-lg text-zinc-400"
+                          className="text-sm lg:text-base text-zinc-400"
                           dangerouslySetInnerHTML={{ __html: event.description }}
                         />
                       </MotionWrapper>
