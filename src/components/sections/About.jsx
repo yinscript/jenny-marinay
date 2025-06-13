@@ -18,7 +18,7 @@ export default function About() {
         variants={slideInUp}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ delay: 10, duration: 3 }}
         className="relative"
       >
