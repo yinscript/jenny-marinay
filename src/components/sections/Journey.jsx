@@ -6,7 +6,7 @@ const Journey = ({ limit }) => {
   const data = limit ? journeyData.slice(0, limit) : journeyData;
 
   return (
-    <div className="max-w-4xl px-4 py-8 mx-auto text-zinc-300">
+    <div className="max-w-4xl px-4 py-10 mb-10 mx-auto text-zinc-300">
       {/* Vertical timeline wrapper */}
       <div className="relative">
         <div className="flex flex-col space-y-10">

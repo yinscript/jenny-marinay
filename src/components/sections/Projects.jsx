@@ -6,7 +6,7 @@ const Projects = ({ limit = 0 }) => {
   const displayedProjects = limit ? projectsData.slice(0, limit) : projectsData;
 
   return (
-    <div className="max-w-4xl px-4 py-8 mx-auto text-zinc-300">
+    <div className="max-w-4xl py-10 mx-auto text-zinc-300">
      {displayedProjects.map((project, index) => (
         <MotionWrapper
           key={project.id}
@@ -25,14 +25,14 @@ const Projects = ({ limit = 0 }) => {
         href={project.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex flex-col-reverse md:flex-row p-4 gap-8 mb-5 hover:bg-white/10 hover:rounded-xl hover:p-4 transition duration-300"
+        className="flex flex-col-reverse md:flex-row p-5 gap-8 mb-5 hover:bg-white/10 rounded-xl hover:p-5 transition duration-300"
       >
         {/* Project title and details */}
         <div className="flex-1">
-          <div className="text-sm text-zinc-400">{project.date}</div>
-          <div className="text-xl font-semibold mt-1 mb-2">{project.title}</div>
-          <div className="text-zinc-300 mb-2">{project.description}</div>
-          <div className="text-zinc-400 mb-2" title={project.url}>
+          <div className="text-xs md:text-sm lg:text-sm text-zinc-400">{project.date}</div>
+          <div className="text-lg lg:text-xl font-semibold my-2 text-zinc-300">{project.title}</div>
+          <div className="text-sm lg:text-base text-zinc-300 mb-2">{project.description}</div>
+          <div className="text-xs lg:text-base text-zinc-400 mb-2" title={project.url}>
             {project.url.length > 40 ? `${project.url.slice(0, 30)}...` : project.url}
             <span className="inline-block">&#8594;</span>
           </div>
@@ -48,7 +48,7 @@ const Projects = ({ limit = 0 }) => {
                   title={tech}
                   className="w-4 h-4 mr-2"
                 />
-                <span className="text-sm">{tech}</span>
+                <span className="text-xs lg:text-sm">{tech}</span>
               </div>
             ))}
           </div>

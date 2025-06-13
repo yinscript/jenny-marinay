@@ -8,7 +8,7 @@ const services = [
     icon: <FaPaintBrush size={30} className="mb-6 text-zinc-300" />,
     title: "UI/UX Design",
     description:
-      "Creating intuitive and user-centered designs for web and mobile applications to enhance user experience.",
+      "Creating intuitive and user-centered designs for website and mobile applications to enhance user experience.",
     spotlightColor: "rgba(255, 104, 212, 0.2)",
   },
   {

@@ -15,11 +15,11 @@ const lines = [
 
 const Hero = () => {
   return (
-    <div className="container max-w-4xl mx-auto px-6 py-10 flex items-center justify-center">
+    <div className="container max-w-4xl mx-auto px-5 py-10 flex items-center justify-center">
       <header className="w-full max-w-5xl">
 
         {/* Tab Header */}
-        <div className="coding inverse-toggle text-sm mono subpixel-antialiased bg-zinc-800 border border-neutral-700 rounded-lg overflow-hidden">
+        <div className="coding inverse-toggle text-sm mono subpixel-antialiased bg-zinc-800 border border-neutral-800 rounded-lg overflow-hidden">
 
           {/* Tab Header */}
           <div className="flex items-center bg-neutral-800 py-3 px-5">

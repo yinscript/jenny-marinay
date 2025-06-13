@@ -22,7 +22,7 @@ function SectionWrapper({ title, subtitle, link, children }) {
   return (
     <div className="max-w-4xl mt-5 px-4 mx-auto text-zinc-100">
       {title && (
-        <h2 className="text-2xl md:text-3xl lg:text-3xl font-light border-b border-zinc-700 pb-2 mt-10 flex items-center gap-2 group">
+        <h2 className="text-2xl md:text-3xl lg:text-3xl font-light pl-1 border-b border-zinc-700 pb-3 my-3 flex items-center gap-2 group">
           {title}
           {link && (
             <a
