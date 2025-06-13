@@ -39,8 +39,8 @@ const Services = () => {
           >
             <SpotlightCard spotlightColor={spotlightColor} className="flex flex-col">
               {icon}
-              <div className="text-xl font-semibold mb-2 text-zinc-300">{title}</div>
-              <div className="text-md text-zinc-400">{description}</div>
+              <div className="text-md md:text-md lg:text-xl font-semibold mb-2 text-zinc-300">{title}</div>
+              <div className="text-sm lg:text-base text-zinc-400">{description}</div>
             </SpotlightCard>
           </MotionWrapper>
         ))}
