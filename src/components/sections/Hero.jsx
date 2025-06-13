@@ -43,7 +43,7 @@ const Hero = () => {
             <div className="text-left">
 
               {/* Rotating Title */}
-              <h1 className="text-2xl md:text-5xl font-extrabold text-zinc-300 flex flex-wrap items-center gap-3 py-5">
+              <h1 className="text-xl md:text-5xl font-extrabold text-zinc-300 flex flex-wrap items-center gap-3 py-5">
                 <span>Designing the web with</span>
                 <RotatingText
                   texts={["creativity", "precision", "clean code!"]}
@@ -60,7 +60,7 @@ const Hero = () => {
               </h1>
 
               {/* Tab Text Content */}
-              <pre className="text-md md:text-md text-zinc-400 whitespace-pre-wrap">
+              <pre className="text-xs lg:text-base text-zinc-400 whitespace-pre-wrap">
                 {lines.map((line, i) => (
                   <div key={i}>
                     <span className="text-blue-400">{'>'}</span> {line}
