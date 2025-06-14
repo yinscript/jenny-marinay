@@ -116,9 +116,9 @@ const About = () => {
         </ul>
       </div>
 
-      {/* Achievements Section */}
+      {/* Certifications Section */}
       <div className="pb-5">
-        <h2 className="text-2xl md:text-3xl lg:text-3xl font-light border-b border-zinc-700 mb-4 pb-3">Achievements</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-3xl font-light border-b border-zinc-700 mb-4 pb-3">Certifications</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
           {aboutData.certifications.content.map((item, idx) => (
             <a
