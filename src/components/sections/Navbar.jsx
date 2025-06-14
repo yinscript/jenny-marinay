@@ -6,6 +6,7 @@ const Navbar = () => {
   const location = useLocation();
   const isAboutPage = location.pathname === '/about';
   const isProjectsPage = location.pathname === '/projects';
+  const isHomePage = location.pathname === '/';
 
   return (
     <nav className="top-1 w-full z-40 pt-2">
@@ -15,6 +16,19 @@ const Navbar = () => {
             <img className="h-8" src={Logo} alt="logo" />
           </a>
           <div className="items-center space-x-5 text-lg">
+          <a
+              href="/"
+              className={`relative inline-block text-gray-300 transition-colors group ${
+                isHomePage ? 'text-white' : 'hover:text-zinc-400'
+              }`}
+            >
+              <span className="relative z-10">Home</span>
+              <span
+                className={`absolute bottom-0 left-1/2 h-0.5 w-0 bg-gray-300 transition-all duration-300 transform -translate-x-1/2 ${
+                  isHomePage ? 'w-full' : 'group-hover:w-full'
+                }`}
+              ></span>
+            </a>
             <a
               href="/about"
               className={`relative inline-block text-gray-300 transition-colors group ${
