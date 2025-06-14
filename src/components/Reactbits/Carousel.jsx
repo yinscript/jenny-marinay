@@ -193,8 +193,8 @@ export default function Carousel({
               transition={effectiveTransition}
             >
                 <div className="p-5 flex flex-col justify-start">
-                    <div className="mb-1 font-black text-lg text-zinc-300 text-start pb-3">{item.title}</div>
-                    <p className="lg:text-base sm:text-sm  text-start text-zinc-400">{item.description}</p>
+                    <div className="mb-1 font-black text-base lg:text-lg text-zinc-300 text-start pb-3">{item.title}</div>
+                    <p className="text-sm lg:text-base text-start text-zinc-400">{item.description}</p>
                 </div>
             </motion.div>
           );

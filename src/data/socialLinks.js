@@ -20,7 +20,7 @@ export const socialLinks = [
     },
     {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/jenny-marinay-42b3b1236/',
+        url: 'https://www.linkedin.com/in/jennymarinay2/',
         icon: RiLinkedinBoxLine,
         coloredIcon: 'LinkedIn',
     },

@@ -106,7 +106,6 @@ function App() {
           element={
             <SectionWrapper
               title={routeSections.about.title}
-              subtitle={routeSections.about.subtitle}
             >
               <About />
             </SectionWrapper>

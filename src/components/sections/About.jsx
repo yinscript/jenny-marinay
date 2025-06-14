@@ -1,209 +1,195 @@
-import { motion } from 'framer-motion';
-import { techIcons } from '/src/data/projectsData';
-import { infoItems } from '/src/data/aboutData';
-import Carousel from '/src/components/Reactbits/Carousel'
-import MotionWrapper from "/src/components/MotionWrapper";
-import { slideInUp } from "/src/utils/motionVariants";
-import NotMyPic from "/public/assets/About/notme.png";
-import GithubLogo from "/public/assets/About/github.png";
+import aboutData from "/src/data/aboutData";
+import { IoIosArrowForward } from "react-icons/io";
+import BlurText from "/src/components/Reactbits/BlurText";
+import Lanyard from '/src/components/Reactbits/Lanyard'
+import { IoMdPin } from "react-icons/io";
+import SpotlightCard from "/src/components/Reactbits/SpotlightCard";
+import Contact from "/src/components/sections/Contact";
 
-export default function About() {
-  const icons = Object.entries(techIcons);
-  
-  // imma clean this up, i promise
+// Images
+import AdU from "/public/assets/About/adu.png"
+import HREP from "/public/assets/About/hrep.png"
+import MyPic from "/public/assets/About/notme.png"
+
+const About = () => {
+  const handleAnimationComplete = () => {
+  }
   return (
-    <>
-    <div className="flex items-center justify-center w-full pt-5">
-    <MotionWrapper
-        variants={slideInUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ delay: 10, duration: 3 }}
-        className="relative"
-      >
-      <div className="grid w-full max-w-screen-xl grid-cols-1 sm:grid-cols-12 gap-4">
-            {/* 1st Row - 2 columns */}
-            {/* Left Column */}
-            <div className="sm:col-span-6 col-span-1 bg-zinc-900 border border-white/20 backdrop-blur-md rounded-lg p-5 shadow flex flex-col justify-center">
-              <div className="text-xl pb-2 font-bold text-zinc-300">
-                Hi, I'm Jenny Marinay.
-              </div>
-              <hr className="border-white/10 mb-3" />
-              <div className="text-xs font-medium text-zinc-600 pb-2 pt-3">
-                BACK STORY
-              </div>
-              <div className="text-zinc-400 lg:text-base sm:text-sm">
-                I discovered my passion for design when I found myself really invested in perfecting the visuals of the systems I was programming in freshman year. I started out focused on functionality, but soon got interested on design and user experience. That led me to dive into the world of UI, UX, and product design.
-              </div>
-              <div className="text-xs font-medium text-zinc-600 pt-5">
-                WHAT I DO NOW
-              </div>
-              <div className="text-zinc-400 lg:text-base sm:text-sm pt-2 ">
-                I'm a former frontend developer intern, currently leveling up my skills and actively looking for new opportunities. 
-              </div>
-            </div> 
+    <section id="about" className="max-w-4xl pt-10 m-auto">
+      {/* Introduction Section */}
+      <div className="grid grid-cols-12 gap-4">
+        {/* Left Column - Text */}
+        <div className="col-span-9">
+          <BlurText
+            text="Could I Be More Eager to Learn?"
+            delay={150}
+            animateBy="words"
+            direction="top"
+            onAnimationComplete={handleAnimationComplete}
+            className="text-4xl md:text-5xl lg:text-5xl font-bold mb-4"
+          />
+        </div>
 
-            {/* Right Column */}
-            <div className="sm:col-span-6 col-span-1 grid grid-cols-1 gap-4">
-              {/* Top Row */}
-              <div className="bg-zinc-900 border border-white/20 backdrop-blur-md rounded-lg shadow flex flex-col overflow-hidden">
-                  <div className="text-xs font-medium text-start pt-5 px-5 text-zinc-600">
-                    WHAT I DO
-                  </div>
-                  <div className="text-lg text-zinc-900 text-center flex-1 relative">
-                    <Carousel
-                      autoplay={true}
-                      autoplayDelay={10000}
-                      pauseOnHover={true}
-                      loop={true}
-                      round={false}
-                      className="w-full h-full"
-                    />
-                  </div>
-              </div>
-
-            {/* Bottom Row */}
-            <div className="bg-zinc-900 border border-white/20 backdrop-blur-md rounded-lg py-8 shadow flex flex-col overflow-hidden h-48">
-              <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-zinc-900 to-transparent z-10" />
-              <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-zinc-900 to-transparent z-10" />
-              <h2 className="text-xl text-center font-bold text-zinc-300 mb-4">Stack I Use</h2>
-                <motion.div
-                  className="flex w-max gap-5 py-2"
-                  animate={{ x: ['0%', '-50%'] }}
-                  transition={{
-                    repeat: Infinity,
-                    repeatType: 'loop',
-                    ease: 'linear',
-                    duration: 20,
-                  }}
-                >
-                  {[...icons, ...icons].map(([name, url], index) => (
-                    <div
-                      key={index}
-                      className="min-w-[50px] h-[50px] flex items-center justify-center bg-zinc-800 border border-zinc-600 rounded-lg shadow hover:scale-110 transition-transform"
-                    >
-                      <img
-                        src={url}
-                        alt={name}
-                        className="w-6 h-6 object-contain"
-                        title={name}
-                      />
-                    </div>
-                  ))}
-                </motion.div>
-            </div>
-          </div>
+        {/* Right Column - Image */}
+        <div className="col-span-3 lg:hidden">
+          <img src={MyPic} alt="Profile" className="w-full h-auto object-cover rounded-lg" />
+        </div>
       </div>
-    </MotionWrapper>
-    </div>
 
-    {/* 2nd Row - 3 columns */}
-    <div className="flex items-center justify-center w-full pt-4">
-    <MotionWrapper
-        variants={slideInUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ delay: 10, duration: 3 }}
-        className="relative"
-      >
-        <div className="grid w-full max-w-screen-xl grid-cols-1 sm:grid-cols-12 gap-4">
-          {/* Left Column */}
-          <div className="sm:col-span-6 col-span-1 bg-zinc-900 border border-white/20 backdrop-blur-md rounded-lg p-5 shadow flex flex-col justify-center">
-            <div className="flex flex-wrap gap-2">
-              {infoItems.map((item, index) => {
-                  const Icon = item.icon;
-                  return (
-                    <div key={index} className="flex items-center px-2 py-1 rounded border border-zinc-600 text-zinc-400">
-                      <div className="text-lg pr-2 text-blue-400"><Icon /></div>
-                      <div className="text-sm">{item.label}</div>
+      {/* Lanyard */}
+      <div className="relative">
+        <Lanyard
+          position={[0, 0, 17]}
+          gravity={[0, -40, 0]}
+          className="absolute -top-120 right-0 z-10"
+        />
+      </div>
+
+      {/* Experience Section */}
+      <div className="pb-5 pt-5">
+        <p className="text-zinc-400 pb-5 text-xs lg:text-base">
+          I discovered my passion for <span className="underline decoration-sky-500">design</span> when I found myself really
+          invested in perfecting the <span className="underline decoration-sky-500">visuals</span> of the systems I was programming in
+          freshman year. I started out focusing on <span className="underline decoration-sky-500">functionality</span>, but soon got
+          interested in <span className="underline decoration-sky-500">design</span> and <span className="underline decoration-sky-500">user experience</span>. That led me to dive into the
+          world of <span className="underline decoration-sky-500">UI</span>, <span className="underline decoration-sky-500">UX</span>, and <span className="underline decoration-sky-500">product design</span>.
+        </p>
+        <p className="text-zinc-500 flex items-center gap-1 mb-5 text-xs lg:text-sm xl:text-base 2xl:text-lg">
+            <IoMdPin /> <span>Manila, Philippines</span>
+          </p>
+      </div>
+
+      {/* Experience Section */}
+      <div className="pb-5">
+        <h2 className="text-2xl md:text-3xl lg:text-3xl font-light border-b border-zinc-700 mb-4 pb-3">
+          Experience
+        </h2>
+        <ul className="mb-12">
+          {aboutData.experience.content.map((item, idx) => (
+            <li key={idx} className="flex items-center gap-4 mb-4">
+              {/* Logo on the left side */}
+              <img src={HREP} alt={`${item.role} logo`} className="w-10 h-10 lg:w-15 lg:h-15 object-cover rounded-full" />
+
+              {/* Content in the middle */}
+              <div className="flex-grow">
+                <h3 className="text-sm lg:text-xl font-semibold">
+                  {item.role}
+                </h3>
+                <p className="text-xs lg:text-base text-zinc-500">
+                  {item.company}
+                </p>
+              </div>
+
+              {/* Period on the far right hihi */}
+              <span className="text-zinc-500 text-xs lg:text-sm self-start pt-2">
+                {item.period}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Education Section */}
+      <div className="pb-5">
+        <h2 className="text-2xl md:text-3xl lg:text-3xl font-light border-b border-zinc-700 mb-4 pb-3">Education</h2>
+        <ul className="mb-12">
+          {aboutData.education.content.map((item, idx) => (
+            <li key={idx} className="flex items-center gap-4 mb-4">
+              {/* Logo on the left side */}
+              <img src={ AdU } alt={`${item.degree} logo`} className="w-10 h-10 lg:w-15 lg:h-15 object-cover rounded-full" />
+
+              {/* Content on the right side */}
+              <div className="flex-grow">
+                <h3 className="text-sm lg:text-xl font-semibold">
+                  {item.degree}
+                </h3>
+                <p className="text-xs lg:text-base text-zinc-500">
+                  {item.institution}
+                </p>
+              </div>
+              {/* Period on the far right */}
+              <span className="text-zinc-500 text-xs lg:text-sm self-start pt-2">
+                {item.period}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Achievements Section */}
+      <div className="pb-5">
+        <h2 className="text-2xl md:text-3xl lg:text-3xl font-light border-b border-zinc-700 mb-4 pb-3">Achievements</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+          {aboutData.certifications.content.map((item, idx) => (
+            <a
+              key={idx}
+              href={item.link}
+              target="_blank"
+              rel="nofollow noreferrer"
+              className="group transform hover:scale-102 transition-all duration-300 cursor-pointer">
+              <div
+                className="bg-neutral-800 p-4 rounded-md border border-zinc-700 flex items-center gap-4">
+                {/* Logo on the left side */}
+                <img src={item.image} alt={`${item.title} logo`} className="w-10 h-10 lg:w-15 lg:h-15 object-cover" />
+
+                {/* Text content on the right side */}
+                <div className="flex-1">
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-sm lg:text-base font-semibold">
+                      {item.title}
+                    </h3>
+                    {/* Arrow icon placed directly after the title */}
+                    <IoIosArrowForward className="text-zinc-500 group-hover:text-zinc-300 transform group-hover:translate-x-1 transition-transform duration-300" />
+                  </div>
+                    {/* Institution | Date placed directly under the title */}
+                    <p className="text-xs lg:text-sm text-zinc-500">
+                      {item.institution} | {item.date}
+                    </p>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* Design Process Section */}
+      <div className="pb-5">
+        <div className="flex flex-col gap-10">
+          {/* Top Row */}
+          <h2 className="text-2xl md:text-3xl lg:text-3xl font-light border-b border-zinc-700 -mb-15 pb-3">
+             My Design Process
+          </h2>
+          <div div className="flex-1 flex items-center"></div>
+
+          <div className="flex-1 h-80 overflow-x-auto scrollbar-hide relative">
+            <div className="flex gap-4">
+              {aboutData.designProcess.steps.map((item, idx) => {
+                const Icon = item.icon;
+                return (
+                  <SpotlightCard
+                    className="bg-transparent w-[220px] h-[220px] lg:h-[250px] flex-shrink-0"
+                    key={idx}
+                  >
+                    <div className="flex flex-col items-start rounded-md max-w-full h-full">
+                      <div className="text-base lg:text-lg text-sky-400 p-2 lg:p-3 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center mb-4">
+                        <Icon />
+                      </div>
+                      <h3 className="text-base lg:text-lg font-semibold mb-2 pt-1 text-white">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-400 text-xs lg:text-sm">{item.description}</p>
                     </div>
-                  );
-                })}
-            </div>
-          </div>
-
-          {/* Right Column */}
-          <div className="sm:col-span-6 col-span-1 grid grid-cols-2 gap-4">
-            <div className="bg-zinc-800 border border-white/20 backdrop-blur-md rounded-lg p-0 shadow flex flex-col overflow-hidden h-48">
-              <img
-                src= { NotMyPic }
-                alt="Sidebar 1"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            <div className="bg-zinc-800 border border-white/20 backdrop-blur-md rounded-lg p-0 shadow flex flex-col overflow-hidden h-48">
-              <img
-                src= { GithubLogo }
-                alt="Sidebar 2"
-                className="w-full h-full object-cover"
-              />
+                  </SpotlightCard>
+                );
+              })}
             </div>
           </div>
         </div>
-        </MotionWrapper>
       </div>
-
-
-
-      {/* 3rd Row - 2 columns */}
-      <div className="flex items-center justify-center w-full pt-4">
-      <MotionWrapper
-        variants={slideInUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ delay: 10, duration: 3 }}
-        className="relative"
-      >
-        <div className="grid w-full max-w-screen-xl grid-cols-1 sm:grid-cols-12 gap-4">
-
-          {/* Left Column */}
-          <div className="sm:col-span-5 col-span-1 bg-zinc-900 border border-white/20 backdrop-blur-md rounded-lg p-6 flex flex-col justify-center shadow">
-            <div className="flex flex-wrap gap-2">
-              <div className="text-xs font-medium text-zinc-600">
-                RANDOM STUFF
-              </div>
-              <div className="text-zinc-400 lg:text-base sm:text-sm pt-2 ">
-                I enjoy exploring different stuff because in that way, it helps me figure out what I'm good at—and what I'm not.
-              </div>
-            </div>
-           </div>
-
-          {/* Right Column */}
-          <div className="sm:col-span-7 col-span-1 bg-zinc-900 border border-white/20 backdrop-blur-md rounded-lg p-6 pb-0 flex flex-col justify-center shadow relative overflow-hidden whitespace-nowrap">
-            {/* Tab Header */}
-            <h2 className="text-xl text-center font-bold text-zinc-300 mb-4">My Internet Identity</h2>
-            <div className="coding inverse-toggle text-sm mono subpixel-antialiased bg-zinc-800 border border-neutral-800 rounded-lg rounded-b-none overflow-hidden">
-              {/* Tab Header */}
-              <div className="flex items-center bg-neutral-900 py-3 px-5">
-                <div className="h-3 w-3 bg-red-400 rounded-full"></div>
-                <div className="ml-2 h-3 w-3 bg-orange-300 rounded-full"></div>
-                <div className="ml-2 h-3 w-3 bg-green-500 rounded-full"></div>
-              </div>
-            </div>
-            {/* Content */}
-            <div className="px-6 pb-10 py-5 bg-neutral-900 text-zinc-400 border border-neutral-800">
-            My name is Jenny Yin.
-            </div>
-            <div className="pointer-events-none absolute bottom-0 left-0 h-24 w-full bg-gradient-to-t from-black/50 to-transparent z-10" />
-        </div>
-    
-      </div>
-      </MotionWrapper>
-    </div>
-
-    {/* soon to be filled */}
-    {/* <div className="text-zinc-50 py-4 font-sans grid grid-cols-2 gap-4">
-      <div className="bg-[#22223e] border border-white/20 flex items-center justify-center rounded-lg p-6">
       
-      </div>
-      <div className="bg-zinc-800 p-3 border border-white/20 rounded-lg flex flex-row justify-center">
-      
-      </div>
-      </div> */}
-    </>
+      < Contact />
+    </section>
   );
-}
+};
+
+export default About;

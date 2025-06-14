@@ -4,8 +4,11 @@ import { socialLinks } from '/src/data/socialLinks';
 import { iconMap } from '/src/data/socialLinks';
 import Monterey from '/public/assets/Contact/monterey.jpg';
 import PlainMail from "/public/assets/Airmails/plainMail.png";
+import BlurText from "/src/components/Reactbits/BlurText";
 
 const Contact = () => {
+  const handleAnimationComplete = () => {
+  }
   const [activeTab, setActiveTab] = useState('social');
   const [hoveredMailId, setHoveredMailId] = useState(null);
   const [openedMail, setOpenedMail] = useState(null);
@@ -40,7 +43,7 @@ const Contact = () => {
           style={{
             backgroundImage: `url(${Monterey})`,
           }}
-        >
+          >
           {/* Top Bar with Dots + Tabs */}
           {/* Obsessed with MacOS terminal tab UI >_<  */}
           <div className="flex items-center bg-zinc-800 px-3 pt-2 rounded-t-lg border border-zinc-700 relative">
@@ -71,8 +74,23 @@ const Contact = () => {
           </div>
     
           {/* Will modify this into an image in the future :)) */}
-          <div className="bg-zinc-900 border border-zinc-700 border-t-0 text-zinc-400 text-sm px-4 py-6">
-            I'm open to new opportunities, collaborations, or simply expanding my network. :D
+
+          <div className="py-10 bg-neutral-800 ">
+             <div className="flex flex-col gap-3 items-center">
+               <div className="flex items-center gap-2 bg-green-600/10 px-4 py-2 rounded-full">
+                 <div className="bg-green-500 w-2 h-2 rounded-full"></div>
+                 <span className="text-xs lg:text-sm font-light text-zinc-300">Available to Work</span>
+               </div>
+               <BlurText
+                 text="Let's create your next big idea."
+                 delay={150} 
+                 animateBy="words"
+                 direction="top"
+                 onAnimationComplete={handleAnimationComplete}
+                 className="text-xl md:text-5xl lg:text-5xl font-bold mb-4 lg:text-center"
+               >
+               </BlurText>
+             </div>
           </div>
         </div>
       )}
