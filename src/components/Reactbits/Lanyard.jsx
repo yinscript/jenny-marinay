@@ -28,16 +28,18 @@ export default function Lanyard({ position = [0, 0, 30], gravity = [0, -40, 0], 
   }
 
   return (
-    <div className="absolute -top-110 -right-145 z-0 w-full h-screen flex justify-center items-center transform scale-100 origin-center">
+    <div className="absolute -top-20 right-0 z-0 w-auto h-screen flex justify-end items-center transform scale-100 origin-center">
       <Canvas
         camera={{ position: position, fov: fov }}
         gl={{ alpha: transparent }}
         onCreated={({ gl }) => gl.setClearColor(new THREE.Color(0x000000), transparent ? 0 : 1)}
       >
         <ambientLight intensity={Math.PI} />
+
         <Physics gravity={gravity} timeStep={1 / 60}>
           <Band />
         </Physics>
+
         <Environment blur={0.75}>
           <Lightformer intensity={2} color="white" position={[0, -1, 5]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
           <Lightformer intensity={3} color="white" position={[-1, -1, 1]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
@@ -177,7 +179,7 @@ function Band({ maxSpeed = 50, minSpeed = 0 }) {
             useMap
             map={texture}
             repeat={[-3, 1]}
-            lineWidth={1}
+            lineWidth={2}
           />
         </mesh>
       )}

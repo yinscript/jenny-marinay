@@ -16,6 +16,11 @@ const About = () => {
   }
   return (
     <section id="about" className="max-w-4xl pt-10 m-auto">
+        <Lanyard
+          position={[0, 0, 17]}
+          gravity={[0, -40, 0]}
+          className="absolute -top-120 right-0 z-10"
+        />
       {/* Introduction Section */}
       <div className="grid grid-cols-12 gap-4">
         {/* Left Column - Text */}
@@ -38,11 +43,7 @@ const About = () => {
 
       {/* Lanyard */}
       <div className="relative">
-        <Lanyard
-          position={[0, 0, 17]}
-          gravity={[0, -40, 0]}
-          className="absolute -top-120 right-0 z-10"
-        />
+    
       </div>
 
       {/* Experience Section */}
