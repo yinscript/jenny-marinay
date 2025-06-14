@@ -36,25 +36,30 @@ const aboutData = {
                 title: "Intro to Programming Using Java",
                 institution: "Sololearn",
                 date: "May 2025",
-                image: Sololearn
+                image: Sololearn,
+                link: "https://www.sololearn.com/en/certificates/CC-ZWBG7VOY"
             },
             {
                 title: "Google UX Design Certificate",
                 institution: "Coursera",
                 date: "Jul 2024",
-                image: GoogleUX
+                image: GoogleUX,
+                link: "https://www.coursera.org/account/accomplishments/professional-cert/XU2NUEN4EBY7?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof"
+
             },
             {
                 title: "Responsive Web Design",
                 institution: "freeCodeCamp",
                 date: "Apr 2025",
-                image: FCC
+                image: FCC,
+                link: "https://www.freecodecamp.org/certification/jenny_yin/responsive-web-design"
             },
             {
                 title: "IT Specialist in Databases",
                 institution: "Pearson",
                 date: "May 2025",
-                image: IT
+                image: IT,
+                link: "https://www.credly.com/badges/4d41d162-e6f4-4c26-a069-03b397cd83a7/linked_in_profile"
             },
         ],
     },
