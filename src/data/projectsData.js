@@ -8,12 +8,12 @@ import Snacz from '/public/assets/Projects/snacz.png';
 const projectsData = [
     {
         id: 1,
-        title: "TodoList",
-        image: TodoList,
-        date: "Apr 2025",
-        description: "First attempt in using React. Learned the use of JSON local storage and applied it.",
-        url: "https://minimal-todolist.vercel.app",
-        tech: ["ReactJS", "TailwindCSS"],
+        title: "Soarchives",
+        image: Soarchives,
+        date: "Feb 2025 - Dec 2025",
+        description: "A social commerce centralized platform for showcasing and selling artisanal crafts.",
+        url: "https://www.behance.net/gallery/215552791/SOARchives-Frontend-User-Interface-Design",
+        tech: ["Laravel", "Bootstrap", "MySQL" ],
     },
     {
         id: 2,
@@ -26,21 +26,21 @@ const projectsData = [
     },
     {
         id: 3,
-        title: "Soarchives",
-        image: Soarchives,
-        date: "Feb 2025 - Dec 2025",
-        description: "A social commerce centralized platform for showcasing and selling artisanal crafts.",
-        url: "https://www.behance.net/gallery/215552791/SOARchives-Frontend-User-Interface-Design",
-        tech: ["Laravel", "Bootstrap", "MySQL" ],
-    },
-    {
-        id: 4,
         title: "Snacz",
         image: Snacz,
         date: "Jan 2025",
         description: "A UI/UX case study for a movie theater app, focusing on improving user experience and accessibility.",
         url: "https://www.behance.net/gallery/174934231/Snacz-Snack-Ordering-App-for-a-Movie-Theater",
         tech: ["Figma"],
+    },
+    {
+        id: 4,
+        title: "TodoList",
+        image: TodoList,
+        date: "Apr 2025",
+        description: "First attempt in using React. Learned the use of JSON local storage and applied it.",
+        url: "https://minimal-todolist.vercel.app",
+        tech: ["ReactJS", "TailwindCSS"],
     },
 ];
 
