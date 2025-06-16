@@ -24,7 +24,7 @@ const aboutData = {
     education: {
         content: [
             {
-                degree: "Bachelor of Scientist in Information Technology",
+                degree: "Bachelor of Science in Information Technology",
                 institution: "Adamson University",
                 period: "Aug 2021 - Jul 2025",
             },
