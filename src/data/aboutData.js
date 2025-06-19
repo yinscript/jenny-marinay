@@ -138,6 +138,10 @@ export const techIcons = {
         name: "Java",
         url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
     },
+    Supabase: {
+        name: "Supabase",
+        url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+    },
 };
   
 

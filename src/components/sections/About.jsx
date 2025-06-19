@@ -5,6 +5,7 @@ import Lanyard from '/src/components/Reactbits/Lanyard'
 import { IoMdPin } from "react-icons/io";
 import SpotlightCard from "/src/components/Reactbits/SpotlightCard";
 import Contact from "/src/components/sections/Contact";
+import { techIcons } from "/src/data/aboutData";
 
 // Images
 import AdU from "/public/assets/About/adu.png"
@@ -46,7 +47,7 @@ const About = () => {
     
       </div>
 
-      {/* Experience Section */}
+      {/* Background Section */}
       <div className="pb-5 pt-5">
         <p className="text-zinc-400 pb-5 text-xs lg:text-base">
           I discovered my passion for <span className="underline decoration-sky-500">design</span> when I found myself really
@@ -58,6 +59,31 @@ const About = () => {
         <p className="text-zinc-500 flex items-center gap-1 mb-5 text-xs lg:text-sm xl:text-base 2xl:text-lg">
             <IoMdPin /> <span>Manila, Philippines</span>
           </p>
+      </div>
+
+      {/* Skills Section */}
+      <div className="pb-5">
+        <h2 className="text-2xl md:text-3xl lg:text-3xl font-light border-b border-zinc-700 mb-4 pb-3">Skills</h2>
+        <div className="flex flex-wrap gap-3 pb-12">
+          {Object.entries(techIcons).map(([key, tech], index) => (
+            <div
+              key={index}
+              className="flex items-center gap-2 px-3 py-1 bg-zinc-800 border border-zinc-700 rounded-md shadow-sm hover:scale-105 transition-transform duration-200"
+            >
+              {/* Icon Image */}
+              <img
+                src={tech.url}
+                alt={tech.name}
+                className="w-5 h-5 lg:w-6 lg:h-6 object-contain"
+              />
+
+              {/* Icon Name */}
+              <span className="text-xs lg:text-sm text-gray-300 font-medium">
+                {tech.name}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Experience Section */}
