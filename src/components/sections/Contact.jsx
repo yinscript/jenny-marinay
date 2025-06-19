@@ -79,7 +79,7 @@ const Contact = () => {
              <div className="flex flex-col gap-3 items-center">
                <div className="flex items-center gap-2 bg-green-600/10 px-4 py-2 rounded-full">
                  <div className="bg-green-500 w-2 h-2 rounded-full"></div>
-                 <span className="text-xs lg:text-sm font-light text-zinc-300">Available to Work</span>
+                 <span className="text-xs font-light text-zinc-300">Available to Work</span>
                </div>
                <BlurText
                  text="Let's create your next big idea."

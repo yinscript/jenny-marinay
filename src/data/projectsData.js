@@ -3,6 +3,8 @@ import TodoList from '/public/assets/Projects/todoList.png';
 import TerminalPortfolio from '/public/assets/Projects/vuePortfolio.png';
 import Soarchives from '/public/assets/Projects/soarchives.png';
 import Snacz from '/public/assets/Projects/snacz.png';
+import EduSparkPH from '/public/assets/Projects/edusparkph.png';
+import Codeit from '/public/assets/Projects/codeit.png';
 
 
 const projectsData = [
@@ -28,7 +30,7 @@ const projectsData = [
         id: 3,
         title: "Snacz",
         image: Snacz,
-        date: "Jan 2025",
+        date: "May 2023",
         description: "A UI/UX case study for a movie theater app, focusing on improving user experience and accessibility.",
         url: "https://www.behance.net/gallery/174934231/Snacz-Snack-Ordering-App-for-a-Movie-Theater",
         tech: ["Figma"],
@@ -41,6 +43,24 @@ const projectsData = [
         description: "First attempt in using React. Learned the use of JSON local storage and applied it.",
         url: "https://minimal-todolist.vercel.app",
         tech: ["ReactJS", "TailwindCSS"],
+    },
+    {
+        id: 5,
+        title: "Edu Spark PH",
+        image: EduSparkPH,
+        date: "Jun 2023",
+        description: "A UI/UX case study for a free scholarship search platform designed to help students facing financial challenges.",
+        url: "https://www.behance.net/gallery/174104055/Edu-Spark-PH-App-UX-Case-Study#",
+        tech: ["Figma"],
+    },
+    {
+        id: 6,
+        title: "Codeit",
+        image: Codeit,
+        date: "May 2023",
+        description: "A UI/UX case study for a coding platform designed to help students learn programming, and offers certifications. .",
+        url: "https://www.behance.net/gallery/175061235/Codeit-Responsive-Website-Design#",
+        tech: ["AdobeXD"],
     },
 ];
 

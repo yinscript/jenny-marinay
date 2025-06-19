@@ -9,7 +9,7 @@ export const socialLinks = [
     },
     {
         name: 'Resume',
-        url: 'https://drive.google.com/file/d/1PuWoZvYxyOjqVvzCXSfNjJpUOfvNPNWc/view?usp=sharing',
+        url: 'https://drive.google.com/file/d/1_w9IpOHqCFnD3ZaswbQsyjGigvCzu-57/view?usp=sharing',
         icon: RiFile2Line,
     },
     {
