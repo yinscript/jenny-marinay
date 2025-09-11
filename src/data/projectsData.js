@@ -6,6 +6,7 @@ import Snacz from '/public/assets/Projects/snacz.png';
 import EduSparkPH from '/public/assets/Projects/edusparkph.png';
 import Codeit from '/public/assets/Projects/codeit.png';
 import RedesignedNBI from '/public/assets/Projects/redesigned-nbi.png';
+import Orbit from '/public/assets/Projects/orbit.png';
 
 
 const projectsData = [
@@ -20,15 +21,6 @@ const projectsData = [
     },
     {
         id: 2,
-        title: "Terminal Portfolio",
-        image: TerminalPortfolio,
-        date: "Mar 2025",
-        description: "A terminal-inspired web portfolio where I practiced my knowledge in Vue.",
-        url: "https://yin-web-portfolio.vercel.app/terminal",
-        tech: ["VueJS", "TailwindCSS"],
-    },
-    {
-        id: 3,
         title: "Redesigned NBI Clearance Website",
         image: RedesignedNBI,
         date: "Sep 2025",
@@ -37,7 +29,25 @@ const projectsData = [
         tech: ["Figma"],
     },
     {
+        id: 3,
+        title: "Orbit - A Web3 Crypto Wallet",
+        image: Orbit,
+        date: "Aug 2025",
+        description: "A mobile app design for a web3 crypto wallet designed for both beginners and power users.",
+        url: "https://www.behance.net/gallery/233303295/Orbit-A-Web3-Crypto-Wallet-Application-Assessment",
+        tech: ["Figma"],
+    },
+    {
         id: 4,
+        title: "Terminal Portfolio",
+        image: TerminalPortfolio,
+        date: "Mar 2025",
+        description: "A terminal-inspired web portfolio where I practiced my knowledge in Vue.",
+        url: "https://yin-web-portfolio.vercel.app/terminal",
+        tech: ["VueJS", "TailwindCSS"],
+    },
+    {
+        id: 5,
         title: "Snacz",
         image: Snacz,
         date: "May 2023",
@@ -46,7 +56,7 @@ const projectsData = [
         tech: ["Figma"],
     },
     {
-        id: 5,
+        id: 6,
         title: "TodoList",
         image: TodoList,
         date: "Apr 2025",
@@ -55,7 +65,7 @@ const projectsData = [
         tech: ["ReactJS", "TailwindCSS"],
     },
     {
-        id: 6,
+        id: 7,
         title: "Edu Spark PH",
         image: EduSparkPH,
         date: "Jun 2023",
@@ -64,7 +74,7 @@ const projectsData = [
         tech: ["Figma"],
     },
     {
-        id: 7,
+        id: 8,
         title: "Codeit",
         image: Codeit,
         date: "May 2023",
