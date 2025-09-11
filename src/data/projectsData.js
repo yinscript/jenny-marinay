@@ -7,6 +7,7 @@ import EduSparkPH from '/public/assets/Projects/edusparkph.png';
 import Codeit from '/public/assets/Projects/codeit.png';
 import RedesignedNBI from '/public/assets/Projects/redesigned-nbi.png';
 import Orbit from '/public/assets/Projects/orbit.png';
+import Rarebook from '/public/assets/Projects/redesigned-rarebook.png';
 
 
 const projectsData = [
@@ -66,6 +67,15 @@ const projectsData = [
     },
     {
         id: 7,
+        title: "Redesigned Rarebook Website",
+        image: Rarebook,
+        date: "Jan 2024",
+        description: "A responsive redesign of a rare books website, focusing on enhancing user experience and accessibility features.",
+        url: "https://www.behance.net/gallery/232543539/Website-Redesigned-Internship-Application-Assessment",
+        tech: ["Figma"],
+    },
+    {
+        id: 8,
         title: "Edu Spark PH",
         image: EduSparkPH,
         date: "Jun 2023",
@@ -74,7 +84,7 @@ const projectsData = [
         tech: ["Figma"],
     },
     {
-        id: 8,
+        id: 9,
         title: "Codeit",
         image: Codeit,
         date: "May 2023",
