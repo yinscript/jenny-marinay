@@ -5,6 +5,7 @@ import Soarchives from '/public/assets/Projects/soarchives.png';
 import Snacz from '/public/assets/Projects/snacz.png';
 import EduSparkPH from '/public/assets/Projects/edusparkph.png';
 import Codeit from '/public/assets/Projects/codeit.png';
+import RedesignedNBI from '/public/assets/Projects/redesigned-nbi.png';
 
 
 const projectsData = [
@@ -28,6 +29,15 @@ const projectsData = [
     },
     {
         id: 3,
+        title: "Redesigned NBI Clearance Website",
+        image: RedesignedNBI,
+        date: "Sep 2025",
+        description: "A redesigned website for improving user experience and accessibility.",
+        url: "https://www.behance.net/gallery/234401959/Redesigned-NBI-Clearance-Website",
+        tech: ["Figma"],
+    },
+    {
+        id: 4,
         title: "Snacz",
         image: Snacz,
         date: "May 2023",
@@ -36,7 +46,7 @@ const projectsData = [
         tech: ["Figma"],
     },
     {
-        id: 4,
+        id: 5,
         title: "TodoList",
         image: TodoList,
         date: "Apr 2025",
@@ -45,7 +55,7 @@ const projectsData = [
         tech: ["ReactJS", "TailwindCSS"],
     },
     {
-        id: 5,
+        id: 6,
         title: "Edu Spark PH",
         image: EduSparkPH,
         date: "Jun 2023",
@@ -54,7 +64,7 @@ const projectsData = [
         tech: ["Figma"],
     },
     {
-        id: 6,
+        id: 7,
         title: "Codeit",
         image: Codeit,
         date: "May 2023",
