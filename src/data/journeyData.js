@@ -3,6 +3,16 @@ const journeyData = [
         year: 2025,
         events: [
             {
+                month: 'October - Present',
+                title: 'Software Engineer I',
+                description: 'Currently working in the FinTech industry.',
+            },
+            {
+                month: 'July',
+                title: "Completed Bachelor's Degree in Information Technology",
+                description: 'Graduated Magna Cum Laude from Adamson University with a specialization in Web Development.',
+            },
+            {
                 month: 'February - May',
                 title: 'Interned at House of Representatives - Philippines',
                 description: 'Interned as frontend developer. Contributed to authentications design page.',
