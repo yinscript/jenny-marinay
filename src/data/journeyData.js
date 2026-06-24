@@ -1,11 +1,27 @@
 const journeyData = [
     {
+        year: 2026,
+        events: [
+            {
+                month: 'June',
+                title: 'Participated in Workato Buildathon - MCP Edition',
+                description: 'Gained hands-on experience with Workato Enterprise Model Context Protocol (MCP) to understand secure, scalable, and enterprise-ready AI integration architectures.',
+            },
+            {
+                month: 'April',
+                title: 'Rapid Execution Award | SXI',
+                description: 'Recognized for rapidly understanding tasks, delivering high-quality results with minimal guidance, and exemplifying excellence within the team.',
+            },
+
+        ],
+    },
+    {
         year: 2025,
         events: [
             {
                 month: 'October - Present',
                 title: 'Software Engineer I',
-                description: 'Currently working in the FinTech industry.',
+                description: 'Currently working in a FinTech industry.',
             },
             {
                 month: 'July',
